@@ -1,3 +1,4 @@
+<!-- go see https://getbootstrap.com/docs/5.0/components/scrollspy/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,9 +24,9 @@
 
     <title>My Portfolio | Kholis Cahyoko</title>
   </head>
-  <body id="home">
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
     <!-- Start Navbar-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">Kholis Cahyoko</a>
         <button
@@ -50,13 +51,27 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#career">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://blog.kholiscahyoko.my.id">Blog</a>
+              <a class="nav-link" href="http://blog.kholiscahyoko.my.id"
+                >Blog</a
+              >
             </li>
           </ul>
         </div>
@@ -64,22 +79,15 @@
     </nav>
     <!-- End Navbar-->
     <!-- Start Jumbotron (custom from Bootstrap 4)-->
-    <section class="jumbotron text-center">
+    <section id="home" class="jumbotron text-center">
       <img
         class="rounded-circle img-thumbnail"
         src="img/1x1.jpg"
         alt="Kholis Cahyoko"
         width="200"
       />
-      <h1 class="display-4">Kholis Cahyoko</h1>
+      <h1 class="display-4">KHOLIS CAHYOKO</h1>
       <p class="lead">Web Programmer</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L48,181.3C96,203,192,245,288,229.3C384,213,480,139,576,106.7C672,75,768,85,864,106.7C960,128,1056,160,1152,192C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- End Jumbotron-->
 
@@ -93,26 +101,298 @@
         </div>
         <div class="row justify-content-center fs-5 text-center">
           <div class="col-md-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eveniet
-            unde eligendi perferendis at beatae quod, porro veniam eos a?
+            Hello! My name is Kholis Cahyoko, and I'm a Greater Jakarta based
+            Web Programmer. I had worked as Lecturer Assistant in Badiklat
+            Ministry of Defense Indonesia August to November 2014, now I have
+            worked with PT. Andalabs Technology since September 2015 in Central
+            Jakarta.
           </div>
           <div class="col-md-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            earum architecto pariatur sapiente placeat doloribus dolorem minus,
-            perferendis, delectus impedit voluptatibus enim temporibus deserunt
-            nam?
+            I have diverse set of skills on Web Development language and tools,
+            such as HTML, CSS, Javascript, all the way to PHP, Mysql DBMS,
+            Redis, Git Version Controlling, also basic Linux commands.
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#d4dddd"
-          fill-opacity="1"
-          d="M0,64L48,80C96,96,192,128,288,138.7C384,149,480,139,576,149.3C672,160,768,192,864,176C960,160,1056,96,1152,74.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- End About -->
+
+    <!-- Start Education-->
+    <section id="education">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Education</h2>
+          </div>
+        </div>
+        <div class="row fs-5 justify-content-evenly">
+          <div class="col-md-8">
+            <ul class="custom-list">
+              <li>(1998-2000) TK Mardisiwi, Purworejo</li>
+              <li>(2000-2006) SDN 1 Cikande, Serang</li>
+              <li>(2006-2009) SMPN 1 Cikande, Serang</li>
+              <li>(2009-2012) SMAN 1 Kab. Tangerang</li>
+              <li>(2012-2014) CEP CCIT-FTUI, Depok</li>
+              <li>
+                (2019-2024) Pembangunan Jaya University (Information System,
+                Bach. Degree), South Tangerang
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Education-->
+
+    <!-- Start Career-->
+    <section id="career">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Career</h2>
+          </div>
+        </div>
+        <div class="row fs-5 justify-content-evenly">
+          <div class="col-md-8">
+            <ul class="custom-list">
+              <li>
+                (2014) Lecturer Assistant at Badiklat Ministry of Defense
+                Indonesia
+              </li>
+              <li>
+                (2015 - ...) Web Programmer at PT. Andalabs Technology
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Career-->
+
+
+    <!-- Start Skill Set-->
+    <section id="skills">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Skills</h2>
+          </div>
+        </div>
+        <div class="row fs-5 justify-content-evenly">
+          <div class="col-md-8">
+            <ul class="custom-list">
+              <div class="row">
+                <div class="col-md-4">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>PHP</li>
+                </div>
+                <div class="col-md-4">
+                  <li>MySQL</li>
+                  <li>Wordpress</li>
+                  <li>Redis</li>
+                  <li>Git</li>
+                </div>
+                <div class="col-md-4">
+                  <li>Linux Command</li>
+                  <li>MS. Word</li>
+                  <li>MS. Excel</li>
+                  <li>English</li>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Career-->
+
+    <!-- Start Certificate-->
+    <section id="certificates">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Certificates</h2>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/certs/apsara clouder - cloud computing, alibaba cloud relational database service technical operations.png"
+                class="card-img-top certs"
+                alt="Apsara Clouder - Cloud Computing, Alibaba Cloud Relational Database Service Technical Operations"
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="text-center mb-3">
+                    Apsara Clouder - Cloud Computing, Alibaba Cloud Relational
+                    Database Service Technical Operations
+                  </h5>
+                  <dl class="row">
+                    <dt class="col-sm-4">Issuer</dt>
+                    <dd class="col-sm-8">Alibaba Cloud</dd>
+                    <dt class="col-sm-4">Type</dt>
+                    <dd class="col-sm-8">Certificate of Completion</dd>
+
+                    <dt class="col-sm-4">Date Issue</dt>
+                    <dd class="col-sm-8">Feb 15, 2021</dd>
+                    <dt class="col-sm-4">Date Expired</dt>
+                    <dd class="col-sm-8">Feb 15, 2023</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/certs/apsara clouder - cloud computing, migrate your application to alibaba cloud.png"
+                class="card-img-top certs"
+                alt="Apsara Clouder - Cloud Computing, Migrate Your Application to Alibaba Cloud"
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="text-center mb-3">
+                    Apsara Clouder - Cloud Computing, Migrate Your Application
+                    to Alibaba Cloud
+                  </h5>
+                  <dl class="row">
+                    <dt class="col-sm-4">Issuer</dt>
+                    <dd class="col-sm-8">Alibaba Cloud</dd>
+                    <dt class="col-sm-4">Type</dt>
+                    <dd class="col-sm-8">Certificate of Completion</dd>
+
+                    <dt class="col-sm-4">Date Issue</dt>
+                    <dd class="col-sm-8">Feb 16, 2021</dd>
+                    <dt class="col-sm-4">Date Expired</dt>
+                    <dd class="col-sm-8">Feb 16, 2023</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/certs/apsara clouder - cloud computing, operate and manage a cloud server.png"
+                class="card-img-top certs"
+                alt="Apsara Clouder - Cloud Computing, Operate and Manage a Cloud Server"
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="text-center mb-3">
+                    Apsara Clouder - Cloud Computing, Operate and Manage a Cloud
+                    Server
+                  </h5>
+                  <dl class="row">
+                    <dt class="col-sm-4">Issuer</dt>
+                    <dd class="col-sm-8">Alibaba Cloud</dd>
+                    <dt class="col-sm-4">Type</dt>
+                    <dd class="col-sm-8">Certificate of Completion</dd>
+
+                    <dt class="col-sm-4">Date Issue</dt>
+                    <dd class="col-sm-8">Feb 15, 2021</dd>
+                    <dt class="col-sm-4">Date Expired</dt>
+                    <dd class="col-sm-8">Feb 15, 2023</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/certs/Dicoding Event Certificate -Membangun UI Android Menggunakan Material Design.jpg"
+                class="card-img-top certs"
+                alt="Dicoding Event - Membangun UI Android Menggunakan Material Design"
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="text-center mb-3">
+                    Membangun UI Android Menggunakan Material Design
+                  </h5>
+                  <dl class="row">
+                    <dt class="col-sm-4">Issuer</dt>
+                    <dd class="col-sm-8">Dicoding</dd>
+                    <dt class="col-sm-4">Type</dt>
+                    <dd class="col-sm-8">Certificate of Attendance</dd>
+                    <dt class="col-sm-4">Date Issue</dt>
+                    <dd class="col-sm-8">Mar 25, 2021</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="img/certs/Dicoding Event Certificate - 5 Tips Transformasi Diri dari Fresh Graduate jadi Unicorn1.jpg"
+                class="card-img-top certs"
+                alt="Dicoding Event - 5 Tips Transformasi Diri dari Fresh Graduate jadi Unicorn"
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="text-center mb-3">
+                    5 Tips Transformasi Diri dari Fresh Graduate jadi Unicorn
+                  </h5>
+                  <dl class="row">
+                    <dt class="col-sm-4">Issuer</dt>
+                    <dd class="col-sm-8">Dicoding</dd>
+                    <dt class="col-sm-4">Type</dt>
+                    <dd class="col-sm-8">Certificate of Attendance</dd>
+                    <dt class="col-sm-4">Date Issue</dt>
+                    <dd class="col-sm-8">Apr 1, 2021</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+              src="img/certs/Dicoding Event Certificate - Analisa Peretasan Data di Era Pandemi.jpg"
+              class="card-img-top certs"
+              alt="Dicoding Event - Analisa Peretasan Data di Era Pandemi"
+              />
+              <div class="card-body">
+                <div class="card-text">
+                  <h5 class="text-center mb-3">
+                    Analisa Peretasan Data di Era Pandemi
+                  </h5>
+                  <dl class="row">
+                    <dt class="col-sm-4">Issuer</dt>
+                    <dd class="col-sm-8">Dicoding</dd>
+                    <dt class="col-sm-4">Type</dt>
+                    <dd class="col-sm-8">Certificate of Attendance</dd>
+                    <dt class="col-sm-4">Date Issue</dt>
+                    <dd class="col-sm-8">Apr 22, 2021</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Certificate-->
+
+    <!-- Start Modal -->
+    <div class="modal fade" id="certsModal" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+            src="img/certs/Dicoding Event Certificate - Analisa Peretasan Data di Era Pandemi.jpg"
+            class="img-fluid"
+            alt="Dicoding Event - Analisa Peretasan Data di Era Pandemi"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
 
     <!-- Start Projects-->
     <section id="projects">
@@ -185,13 +465,6 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,224L48,197.3C96,171,192,117,288,96C384,75,480,85,576,122.7C672,160,768,224,864,213.3C960,203,1056,117,1152,101.3C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- End Projects-->
 
@@ -233,13 +506,6 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#212529"
-          fill-opacity="1"
-          d="M0,256L26.7,250.7C53.3,245,107,235,160,229.3C213.3,224,267,224,320,234.7C373.3,245,427,267,480,256C533.3,245,587,203,640,202.7C693.3,203,747,245,800,266.7C853.3,288,907,288,960,256C1013.3,224,1067,160,1120,165.3C1173.3,171,1227,245,1280,282.7C1333.3,320,1387,320,1413,320L1440,320L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- End Contact-->
 
@@ -257,6 +523,9 @@
     <!-- End Footer-->
     <!-- Optional JavaScript; choose one of the two! -->
 
+    <!-- Load JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
@@ -269,5 +538,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+
+    <!-- Custom JS-->
+    <script src="./script.js"></script>
   </body>
 </html>
